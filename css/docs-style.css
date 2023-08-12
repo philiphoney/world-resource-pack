@@ -1,0 +1,212 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+body {
+    margin: 0;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+header img {
+    width: 200px;
+    padding: 10px;
+    display: flex;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #80808038;
+    background-color: var(--color-background-color);
+}
+
+header div {
+    padding: 0px;
+}
+
+.return {
+    padding: 20px;
+
+}
+
+header a {
+    color: var(--color-text-color-0);
+    text-decoration: none;
+    padding: 20px;
+}
+
+header a:hover {
+    color: var(--color-blue-color-1);
+    text-decoration: none;
+}
+
+.banner {
+    padding: 100px;
+    text-align: center;
+    color: var(--color-text-color-3);
+    background-color: var(--color-blue-color-0);
+}
+
+.banner span {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.banner a {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.banner a:hover {
+    background-color: rgb(240, 240, 240);
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+nav {
+    position: fixed;
+    height: 100vh;
+    z-index: 4;
+    padding: 10px;
+    padding-top: 100px;
+    width: 300px;
+    border-right: 1px solid #80808038;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--color-text-color-0);
+}
+
+nav a:hover {
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--color-blue-color-0);
+}
+
+nav div {
+    padding-bottom: 20px;
+}
+
+content {
+    z-index: 1;
+    position: absolute;
+    width: 98%;
+    padding-bottom: 50px;
+}
+
+.menu {
+    display: none;
+}
+
+#md-content {
+    padding-top: 100px;
+    padding-left: 350px; 
+}
+
+@media screen and (max-width: 600px) {
+    .banner span {
+     font-size: 20px;
+    }
+ 
+    .banner a {
+     font-size: 10px;
+    }
+
+    .banner a {
+        background-color: white;
+        color: black;
+        font-weight: bolder;
+        font-size: 10px;
+        text-decoration: none;
+        padding: 10px 10px;
+        border-radius: 10px;
+        transition: 0.2s;
+    }
+
+    .banner a:hover {
+        background-color: rgb(240, 240, 240);
+        color: black;
+        font-weight: bolder;
+        font-size: 10px;
+        text-decoration: none;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+    header img {
+        width: 250px;
+        height: 50px;
+        display: flex;
+    }
+
+    header a  {
+        display: none;
+    }
+
+    .return {
+        display: none;
+    }
+
+    .menu {
+        padding: 20px;
+        display: block;
+    }
+
+    .menu i {
+        font-size: 25px;
+ }
+
+ .menu a {
+    font-size: 10px;
+ }
+
+ nav {
+    width: 200px;
+ }
+
+ #menu-docs {
+    display: none;
+ }
+
+ content {
+    width: 100%;
+ }
+
+ #md {
+     padding: 10px;
+}
+
+ #md-content {
+    padding: 10px;
+    padding-top: 100px;
+ }
+}
+
+#media-menu-docs {
+    display: none;
+    padding: 10px;
+    position: fixed;
+    padding-top: 100px;
+    background-color: var(--color-background-color);
+}
+
+#media-menu-docs a {
+    font-size: 15px;
+    color: var(--color-text-color-2);
+}
+
+#media-menu-docs a:hover {
+    color: var(--color-blue-color-0);
+}

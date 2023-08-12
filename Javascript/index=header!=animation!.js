@@ -1,0 +1,1 @@
+document.getElementById("title-meta").innerText = "World Resource Pack";

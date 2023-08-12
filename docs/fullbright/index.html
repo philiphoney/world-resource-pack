@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullbright | World Resource Pack Documentation</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/docs-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Radio Canada', sans-serif; -->
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .active {
+    color: var(--color-blue-color-1);
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex;">
+        <span class="menu" id="menu" onclick="mediaMenu();"><i class="bi bi-list"></i></span>
+       <img src="https://i.ibb.co/6DgKfXg/687474.png" alt="">
+        <a class="active" href="">Fullbright</a>
+        </div>
+        <a class="return" href="../../">Main webseit <i class="bi bi-box-arrow-up-right"></i></a>
+       </div>
+        </header>
+        <nav id="media-menu-docs">
+            <div><a href="" onclick="load('faq fullbright')">Fullbright</a></div>
+            <div><a href="#Install-Fullbright" onclick="load('Install-Fullbright')">Install Fullbright</a></div>
+            <div><a href="#Fullbright-doesnt-work" onclick="load('Fullbright-doesnt-work')">Fullbright doesn't work!</a></div>
+            <div><a href="../../">Main webseit</a></div>
+         </nav>
+    <nav id="menu-docs">
+        <div><a href="" onclick="load('faq fullbright')">Fullbright</a></div>
+        <div><a href="#Install-Fullbright" onclick="load('Install-Fullbright')">Install Fullbright</a></div>
+        <div><a href="#Fullbright-doesnt-work" onclick="load('Fullbright-doesnt-work')">Fullbright doesn't work!</a></div>
+    </nav>
+    <content>
+<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+<span style="display: flex; justify-content: center;">
+    <span id="md-content">
+<zero-md src="../../md/faq fullbright.md" id="md">
+</span>
+    <template>
+      <!-- The CSS load order is respected -->
+      <link rel="stylesheet" href="markdown-styles.css" />
+      <style>
+        h1 {
+          color:  black;
+        }
+      </style>
+      <link rel="stylesheet" href="highlight-styles.css" />
+      <style>
+        code {
+          background: grey;
+        }
+      </style>
+    </template>
+  </zero-md>
+</span>
+    </content>
+    <script src="../../Javascript/docs.js"></script>
+</body>
+</html>
